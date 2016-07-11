@@ -1,6 +1,6 @@
-# e-test
+# Electron Test
 
-> My super-duper app
+> Some Electron Test For Desktop Environment Integration
 
 
 ## Dev
