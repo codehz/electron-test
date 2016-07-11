@@ -2,7 +2,7 @@ const {remote}      = require('electron');
 const path          = require('path');
 const currentWindow = remote.getCurrentWindow();
 
-function setThumbnailToolbar()  {
+function setThumbnailToolbar() {
     currentWindow.setThumbarButtons([{
         tooltip: 'rewind',
         icon: path.join(__dirname, 'rewind.png')
@@ -13,6 +13,10 @@ function setThumbnailToolbar()  {
         tooltip: 'forward',
         icon: path.join(__dirname, 'forward.png')
     }]);
+}
+
+function clearThumbnailToolbar() {
+    currentWindow.setThumbarButtons([]);
 }
 
 function goFullScreen() {
