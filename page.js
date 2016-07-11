@@ -27,3 +27,11 @@ function hideAndShow() {
     currentWindow.hide();
     setTimeout(() => currentWindow.show(), 2000);
 }
+
+function skipTaskbar() {
+    currentWindow.setSkipTaskbar(true);
+}
+
+function showInTaskbar() {
+    currentWindow.setSkipTaskbar(false);
+}

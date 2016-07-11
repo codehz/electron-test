@@ -13,12 +13,23 @@
 				<h2>Some Electron Test For Desktop Environment Integration</h2>
 			</header>
 			<section class="main">
-				<button onclick="setThumbnailToolbar()">SET Thumbnail Toolbar</button>
-				<button onclick="goFullScreen()">goFullScreen</button>
-				<button onclick="exitFullScreen()">exitFullScreen</button>
-				<button onclick="hideAndShow()">hide (2 seconds) and show again</button>
+				<div class="group mainGroup">
+					<button onclick="setThumbnailToolbar()">SET Thumbnail Toolbar</button>
+				</div>
+				<div class="group">
+					<button onclick="goFullScreen()">goFullScreen</button>
+					<button onclick="exitFullScreen()">exitFullScreen</button>
+				</div>
+				<div class="group">
+					<button onclick="hideAndShow()">hide (2 seconds) and show again</button>
+				</div>
+				<div class="group">
+					<button onclick="skipTaskbar()">skip taskbar</button>
+					<button onclick="showInTaskbar()">show in taskbar</button>
+				</div>
 			</section>
-			<footer></footer>
+			<footer>
+			</footer>
 		</div>
 	</body>
 </html>
