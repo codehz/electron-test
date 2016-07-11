@@ -46,3 +46,11 @@ button {
 button:hover {
     background: #aaa;
 }
+
+.autoTest {
+    background: #ccf;
+}
+
+.autoTest:hover {
+    background: #aaf;
+}

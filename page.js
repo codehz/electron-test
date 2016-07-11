@@ -13,6 +13,7 @@ function setThumbnailToolbar() {
         tooltip: 'forward',
         icon: path.join(__dirname, 'forward.png')
     }]);
+    alert('Please check task bar');
 }
 
 function clearThumbnailToolbar() {
@@ -38,4 +39,25 @@ function skipTaskbar() {
 
 function showInTaskbar() {
     currentWindow.setSkipTaskbar(false);
+}
+
+function autoTest(type) {
+    switch(type) {
+        case 'fullscreen':
+            setThumbnailToolbar();
+            goFullScreen();
+            setTimeout(exitFullScreen, 1000);
+            setTimeout(setThumbnailToolbar, 2000);
+            break;
+        case 'visible':
+            setThumbnailToolbar();
+            hideAndShow();
+            setTimeout(setThumbnailToolbar, 3000);
+            break;
+        case 'taskbar':
+            setThumbnailToolbar();
+            skipTaskbar();
+            setTimeout(showInTaskbar, 1000);
+            setTimeout(setThumbnailToolbar, 2000);
+    }
 }
